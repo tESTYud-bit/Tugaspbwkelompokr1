@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Saya</title>
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: radial-gradient(circle, #79baff, #429cfc);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Section umum */
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+
+    /* Anggota kelompok */
+    .anggota-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      margin-top: 15px;
+    }
+
+    .anggota-card {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      text-align: center;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .anggota-card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      object-fit: cover;
+      border: 3px solid #3b82f6;
+    }
+
+    /* Tabel Jadwal */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    table th, table td {
+      padding: 12px 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    table th {
+      background: #007BFF;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Tugas Pemrograman Berbasis Web</h1>
+    <h2> Selamat Datang di Website </h2>
+    <h2>Portofolio Kelompok Penuh Semangat</h2>
+  </header>
+
+  <!-- ANGGOTA KELOMPOK -->
+  <section>
+    <h2>Anggota Kelompok</h2>
+    <div class="anggota-grid">
+      <div class="anggota-card">
+        <img src="profil/umar.jfif" alt="Foto Umar">
+        <h3>Umar Ramadhana Fathirizqi</h3>
+        <p><b>NIM:</b> 24040700045</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+      </div>
+
+      <div class="anggota-card">
+        <img src="profil/MUH.ZIDANE.jpg" alt="Foto Zidane">
+        <h3>Muhammad Zidane Al Ghifari</h3>
+        <p><b>NIM:</b> 24040700075</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+      </div>
+
+      <div class="anggota-card">
+        <img src="profil/ido.jfif" alt="Foto Apridho">
+        <h3>Apridho Fuadil Hadid</h3>
+        <p><b>NIM:</b> 24040700011</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+      </div>
+
+      <div class="anggota-card">
+        <img src="profil/yud.jfif" alt="Foto Yudha">
+        <h3>Yudha Pratama</h3>
+        <p><b>NIM:</b> 24040700039</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+      </div>
+
+      <div class="anggota-card">
+        <img src="profil/fachry.jpeg" alt="Foto Fachry">
+        <h3>Fachry Abhita Islamy</h3>
+        <p><b>NIM:</b> 24040700004</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+      </div>
+
+      <div class="anggota-card">
+        <img src="profil/gusesa.jpeg" alt="Foto Gusesa">
+        <h3>Gusesa Abida Gifari</h3>
+        <p><b>NIM:</b> 24040700003</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABEL JADWAL -->
+<section>
+  <h2>Jadwal Kuliah Teknik Informatika</h2>
+  <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">HARI</th>
+          <th rowspan="2">JAM</th>
+          <th colspan="2">SEMESTER 1 (A1)</th>
+          <th colspan="2">SEMESTER 1 (A2)</th>
+          <th colspan="2">SEMESTER 3 (A1)</th>
+          <th colspan="2">SEMESTER 3 (A2)</th>
+          <th colspan="2">SEMESTER 5 (A1)</th>
+          <th colspan="2">SEMESTER 5 (A2)</th>
+          <th colspan="2">SEMESTER 7 (A1)</th>
+          <th colspan="2">SEMESTER 7 (A2)</th>
+        </tr>
+        <tr>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+          <th>Mata Kuliah</th><th>Dosen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">SENIN</td>
+          <td>07:30 - 08:20</td>
+          <td>Dasar-Dasar Pemrograman</td><td>POPY</td>
+          <td>Desain & Analisis Algoritma</td><td>RITA</td>
+          <td>Sistem Operasi</td><td>MIRZA</td>
+          <td>Keamanan Jaringan</td><td>Hendra</td>
+          <td></td><td></td>
+          <td></td><td></td>
+          <td>Sistem Manajemen Basis Data</td><td>BAYA</td>
+          <td></td><td></td>
+        </tr>
+        <tr>
+          <td>08:20 - 09:10</td>
+          <td>Dasar-Dasar Pemrograman</td><td>POPY</td>
+          <td>Desain & Analisis Algoritma</td><td>RITA</td>
+          <td>Sistem Operasi</td><td>MIRZA</td>
+          <td>Keamanan Jaringan</td><td>Hendra</td>
+          <td></td><td></td>
+          <td></td><td></td>
+          <td>Sistem Manajemen Basis Data</td><td>BAYA</td>
+          <td></td><td></td>
+        </tr>
+        <!-- lanjutkan sesuai jam berikutnya -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  table th, table td {
+    border: 1px solid #444;
+    padding: 6px;
+    text-align: center;
+  }
+  table th {
+    background: #003366;
+    color: white;
+  }
+  table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+</style>
+
+  <!-- KONTAK -->
+  <section>
+    <h2>Kontak</h2>
+    <p>Email: apridhofuadilhadid@gmail.com</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made by Kelompok PBW Penuh Semangat</p>
+  </footer>
+
+</body>
+</html>
